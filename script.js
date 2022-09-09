@@ -1,15 +1,11 @@
-const h1 = document.querySelector('h1')
-const p = document.querySelector('p')
-const parrafito = document.querySelector('.parrafito')
-const pid = document.querySelector('#pid')
-const input = document.querySelector('input')
+const h1 = document.querySelector('h1');
+const input1 = document.querySelector('#calculo1');
+const input2 = document.querySelector('#calculo2');
+const btnCalcular = document.querySelector('btnCalcular');
+const pResultado = document.querySelector('#resultado');
 
-console.log({
-    h1,
-    p,
-    parrafito,
-    pid,
-    input
-})
+function calcular(){
+    let resultado = parseInt(input1.value) + parseInt(input2.value);
+    pResultado.innerText = "Resultado: " + resultado;
+}
 
-h1.innerHTML = 'Sammy te extraño';
